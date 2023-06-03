@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>롯데 자이언츠 선수단 응원 메세지 이벤트</title>
+</head>
+<body>
+  <h1>롯데 자이언츠 선수단 응원 메세지 이벤트</h1>
+  <form action="">
+    <fieldset>
+      <legend>선수단을 응원하고 경품 받자!</legend>
+      <ul>
+        <li>
+          <label for="user_id">아이디</label>
+          <input type="text" id="user_id" placeholder="4자~10자 사이, 공백없이" autofocus /> <!-- autofocus를 입력하면 제일 먼저 hover된다.-->
+        </li>
+        <li>
+          <label for="umail">이메일</label>
+          <input type="text" id="umail" required/>
+        </li>
+        <li>
+          <label for="list">경품 목록</label>
+          <select id="list">
+            <option value="signball">사인볼</option>
+            <option value="uniformA">유니폼A</option>
+            <option value="uniformB" selected>유니폼B</option>
+            <option value="ticket">티켓2매</option>
+          </select>
+        </li>
+        <li>
+          <label for="memo">메모</label>
+          <textarea id="memo" cols="20" rows="4"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>이벤트 결과와 새로운 소식</legend>
+      <input type="radio" name="mailing" id="mailing_y" value="yes" />
+      <label for="mailing_y">메일 수신</label>
+      <input type="radio" name="mailing" id="mailing_n" value="no" />
+      <label for="mailing_n">메일 수신 안함</label>
+    </fieldset>
+
+    <div id="buttons">
+      <input type="submit" value="이벤트 신청하기">
+      <input type="reset" value="취소">
+    </div>
+
+
+  </form>
+</body>
+</html>

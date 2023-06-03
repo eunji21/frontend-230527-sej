@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>롯데 자이언츠</title>
+</head>
+<body>
+  <h1>롯데 자이언츠몰 회원 가입을 환영합니다.</h1>
+  <form>
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <ul>
+        <li>
+          <label for="id">아이디</label>
+            <input type="text" id="id" placeholder="4자 ~ 10자 사이, 공백 없이" required />
+            <!-- for="id" 와 id="id" 를 입력하면  label과 input 기능을 연결시켜 준다. -->
+            <label>
+              <input type="text" name="" id="" placeholder="4자 ~ 10자 사이, 공백 없이" required />
+            </label>
+        </li>
+        <li>
+          <label for="">이메일</label>
+            <input type="email" required />
+        </li>
+        <li>
+            <label for="">비밀번호</label>
+            <input type="password" name="" id="" placeholder="문자와 숫자, 특수 기호 포함" required />
+        </li>
+        <li>
+            <label for="">비밀번호 확인</label>
+            <input type="password" name="" id="" required />
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend> 이벤트와 새로운 소식</legend>
+      <input type="radio" />
+      <label for="">메일 수신</label>
+      <input type="radio" />
+      <label for="">메일 수신 안함</label>
+    </fieldset>
+
+      <input type="submit" value="가입하기">
+      <input type="reset" value="취소하기">
+  </form>
+</body>
+</html>
