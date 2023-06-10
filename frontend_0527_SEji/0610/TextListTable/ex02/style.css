@@ -1,0 +1,44 @@
+#container {
+  width:650px;
+  margin:0 auto;
+  padding:5px;
+}
+#check {   /* 텍스트 부분을 감싸는 div */
+  width:640px;
+}
+
+
+/* 확인하세요 */
+h1 {
+  color: white;
+  font-size: 1em;
+  background: #222; 
+  margin: 0 auto;
+  padding: 10px;
+  text-align: start;
+}
+
+
+/* table */
+table, th, td {
+  caption-side: top;
+  border:1px solid #ccc;
+  text-align: center;
+  border-collapse: collapse;
+  font-weight: bold;
+  padding: 14px 25px;
+  font-size: 15px;
+}
+
+
+
+/* span 태그 */
+h3 {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.small{
+  font-size: 12px;
+}
