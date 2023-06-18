@@ -1,0 +1,230 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --gray-light-color: #e0e0e0;
+
+  /* size */
+  --spacing: 12px;
+
+  /* Font size */
+  --font-large: 20px;
+  --font-regular: 16px;
+  --font-small: 12px;
+}
+
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+ul{list-style: none;}
+
+body{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button, button:focus{
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/*! Header */
+header{
+  display: flex;
+  justify-content: space-between; /*양 귀퉁이로 이동*/
+  padding: var(--spacing); /* 함수 속성을 사용하여 설정 */
+  background-color: #000;
+  color: #fff;
+}
+header .logo{
+  font-size: 20px;
+
+}
+header .logo i{
+  color: red;
+}
+header .logo .fa-search{
+  margin-right: 12px;
+}
+
+
+/*! Video Player */
+.player{
+  position: sticky; /* 위치를 고정 */
+  top: 0;
+  text-align: center;
+  background-color: #000;
+}
+.player video{
+  width: 100%;
+  height: 100%;
+  /* max-width: 1000px; */
+}
+
+
+/*! Video Info */
+.infoAndUpNext{
+  padding: 12px;
+} 
+
+/* metadata */
+.Info .metadata .hashtags{
+  display: flex;
+  font-size: 12px;
+  color: #045fd4;
+}
+
+.Info .metadata .hashtags li{
+  margin-right: 12px;
+}
+
+.Info .metadata .titleAndButton{
+  display: flex;
+}
+
+.Info .metadata .titleAndButton .title{
+  font-size: 14px;
+  margin-right: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.Info .metadata .titleAndButton .moreBtn{
+  height: 100%;
+}
+
+.Info .metadata .views{
+  font-size: 12px;
+  color: gray;
+}
+
+
+/* Action Buttons */
+.Info .actions{
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0;
+}
+
+.Info .actions button{
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.Info .actions button i{
+  margin: 0 auto;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.Info .actions button .active {
+  color: blue;
+}
+
+
+/* Channel description */
+.Info .channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+
+.Info .channel .metadata {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+
+.Info .channel .metadata img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.Info .channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Info .channel .metadata .info .name {
+  font-size: 14px;
+}
+
+.Info .channel .metadata .info .subcribers {
+  font-size: 12px;
+  color: gray;
+}
+
+.Info .channel .subscribe{
+  text-transform: uppercase;
+  color: red;
+}
+
+
+/*! Up next */
+.upNext {
+  padding: 6px 8px;
+}
+
+.upNext > .title { /* > 표시를 넣으면 다음 클래스명을 지목한다*/
+  font-size: 14px;
+  color: gray;
+}
+
+.upNext .items {
+  display: flex;
+  margin-top: 12px;
+}
+
+.upNext .items .img {
+  flex-basis: 35%; /*flex 아이템의 기본 사이즈를 지정하는 속성*/
+  margin-right: 12px;
+}
+.upNext .items .img img {
+  width: 100%;
+}
+.upNext .items .itemInfo {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upNext .items .itemInfo .title {
+  font-size: 12px;
+}
+
+.upNext .items .itemInfo .name, .views {
+  font-size: 10px;
+  color: gray;
+}
+
+.upNext .items .moreBtn{
+  flex-basis: 5%;
+  height: 100%;
+}
+
+
+
+/*! 미디어쿼리 */
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 750px){
+  
+  .infoAndUpNext {
+    flex-direction: row;
+  }
+
+  .upNext {
+    padding: 12px;
+  }
+
+}
