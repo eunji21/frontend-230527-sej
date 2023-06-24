@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 변수 & 연산자</title>
+</head>
+<body>
+  <script>
+    // 문제1
+    const r = 10; // 상수는 꼭! 선언과 동시에 초기화하기!
+    console.log(`넓이 = ${3.14 * r * r}`);
+
+
+    // 문제2
+    let num = 10;
+
+    console.log(++num); //11
+    console.log(num++); //11
+    console.log(num); //12
+    console.log(++num); //13
+    console.log(num--); //13
+    console.log(num); //12
+
+
+    // 문제3
+    // 사용자로부터 숫자를 입력받아 inch를 cm 단위로 변환하여 출력하는 프로그램을 만들어 보세요.
+    // inch = 2.54cm
+    // 대화 상자에서 5inch는 12.7cm입니다.
+
+    let inputInch = prompt('inch 단위의 숫자를 입력해 주세요.');
+    
+    let inch = Number(inputInch); // 자료형 변환! 숫자로 바꿈!
+    let cm = inch * 2.54;
+
+    alert(`${inch}inch는 ${cm}cm입니다.`);
+    
+  </script>
+</body>
+</html>

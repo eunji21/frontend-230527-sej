@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트의 자료형</title>
+</head>
+<body>
+  <!-- 자료형 검사하는 법 & typeof 변수명 -->
+  <script>
+    let num1 = 10;
+    console.log(typeof num1);
+
+    // underfined : 값이 할당되지 않은 변수의 기본값.
+    let undefinedExample;
+    console.log(undefinedExample);
+
+
+    // 문자열로 변환: String() 함수 또는 toString() 매서드로 사용하여 다른 자료형을 문자열로 변환할 수 있다.
+    let numberToString = String(123);
+    console.log(typeof numberToString);
+
+
+    // 숫자로 변환: Number() 함수로 사용하여 문자열을 숫자로 변환할 수 있다.
+    // 문자열이 숫자로 변환할 수 없는 경우 결과는 NaN(Not A Number)이 된다.
+    let stringToNumber = Number('123'); 
+    console.log(typeof stringToNumber);
+
+    
+    // 불리언으로 변환: Boolean()함수를 사용하여 다른 자료형을 불리언으로 변환할 수 있다.
+    // JavaScript 에서는 false, 0, '', null, undefined, NaN 을 제외한 모든 값이 true로 간주된다.
+    let stringToBoolean = Boolean('Hello');
+    console.log(stringToBoolean);
+
+    let numberToBoolean = Boolean(0);
+    console.log(numberToBoolean);
+
+  </script>
+</body>
+</html> 
